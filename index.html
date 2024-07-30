@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <!-- fonts -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:wght@100..900&family=Poppins:wght@500;800&display=swap"
+    rel="stylesheet">
+
+  <title>Blog preview card</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Figtree", sans-serif;
+    }
+
+    :root {
+      --Yellow: hsl(47, 88%, 63%);
+      --White: hsl(0, 0%, 100%);
+      --Gray: hsl(0, 0%, 42%);
+      --Gray: hsl(0, 0%, 7%);
+    }
+
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 100vh;
+      background-color: var(--Yellow);
+   
+    }
+
+    .wrapper {
+      width: 250px;
+      padding: 10px;
+      box-shadow:  5px 7px 7px black;
+      border-radius: 10px;
+      background-color: white;
+      padding: 15px;
+    }
+
+    .wrapper img {
+      border-radius: 10px;
+      width: 100%;
+    }
+
+    .wrapper h4 {
+      margin: 10px;
+      background-color: var(--Yellow);
+      width: fit-content;
+      border-radius:5px;
+      padding: 5px;
+    }
+    .wrapper p{
+      font-size: .7rem;
+      margin: 5px 0;
+      font-weight: bold;
+    }
+    .wrapper h2{
+      font-size: 1rem;
+      margin: 3px 0;
+      font-weight: bold;
+    }
+    .wrapper .des{
+      opacity: .6;
+      margin: 10px 0;
+      font-weight: normal;
+    }
+    .wrapper .person{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+    .wrapper .avatar{
+      width: 30px;
+    }
+    .wrapper .person span{
+      margin-left: 5px;
+      font-weight: bold;
+      font-size: .8rem;
+    }
+  </style>
+</head>
+
+<body>
+
+    <div class="wrapper">
+      <img src="./assets/images/illustration-article.svg" alt="">
+      <h4>Learning</h4>
+      <p>Published 30 Jul 2024</p>
+      <h2>HTML & CSS foundations</h2>
+      <p class="des">These languages are the backbone of every website, defining structure, content, and presentation.</p>
+      <span class="person">
+        <img class="avatar" src="./assets/images/image-avatar.webp" alt="User Avatar">
+        <span>Greg Hooper</span>
+
+      </span>
+    </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Amar</a>.
+  </div>
+</body>
+
+</html>
